@@ -16,20 +16,23 @@
 
 :root {
   --color-lighter: rgb(255, 255, 255);
-  --color-light: rgb(250, 250, 250)
+  --color-light: rgb(155, 155, 155);
   --color-dark: rgb(0, 0, 0);
+  --color-hover: rgb(46, 126, 255);
   --color-primary: rgb(0, 97, 254);
   --color-secondary: rgb(180, 208, 230);
-  --color-hover: rgb(46, 126, 255);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   min-width: 1200px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -54,6 +57,10 @@ h1 {
 
 h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .row {
@@ -98,6 +105,7 @@ h2 {
 .btn {
   padding: 0.25rem 1rem;
   max-width: fit-content;
+  text-align: center;
 }
 
 .btn-primary {
@@ -105,11 +113,83 @@ h2 {
   color: var(--color-lighter);
 }
 
+.btn:hover.btn-primary {
+  background-color: var(--color-hover);
+}
+
+.card {
+  height: 100%;
+}
+
+.card_section_title,
+.card_section_info {
+  border: 2px solid lightgray;
+}
+
+.card_section_title {
+  height: 5%;
+  align-content: center;
+}
+
+.card_section_info {
+  height: 95%;
+  border-top: 0;
+  padding: 2rem;
+
+  * {
+    margin-bottom: 0.75rem;
+  }
+
+  .card_costs,
+  .card_features,
+  > p,
+  hr,
+  li {
+    margin-bottom: 2rem;
+  }
+
+  li > i {
+    color: var(--color-primary);
+  }
+
+  hr {
+    max-width: 20%;
+  }
+
+  .card_costs > p {
+    color: var(--color-light);
+  }
+
+  .btn {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.card_icon_text {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.left-align {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.link {
+  text-decoration: underline;
+  color: blue;
+}
+
 /* #endregion common */
 
 /* #region header */
 
 header {
+  z-index: 1000;
   position: sticky;
   top: 0;
   padding: 0 2rem;
@@ -122,11 +202,11 @@ header {
 
   nav {
     height: 100%;
+  }
 
-    span {
-      height: 100%;
-      align-content: center;
-    }
+  nav span {
+    height: 100%;
+    align-content: center;
   }
 
   .left-menu,
@@ -139,10 +219,6 @@ header {
   span:hover {
     margin-bottom: -1px;
     border-bottom: 2px solid black;
-  }
-
-  .btn:hover.btn-primary {
-    background-color: var(--color-hover);
   }
 }
 
@@ -193,15 +269,29 @@ main {
       width: 100%;
       height: 2px;
       border: 0;
-  border-top: 1px solid rgb(235, 235, 235);
-  margin: 1em 0;
-  padding: 0;
+      border-top: 1px solid rgb(235, 235, 235);
+      margin: 1em 0;
+      padding: 0;
     }
   }
 
   .plans {
+    padding: 2rem 0;
+
     .container {
+      width: 60%;
+    }
+
+    .billing {
       margin: 2rem auto;
+
+      label {
+        margin-right: 1rem;
+      }
+
+      input {
+        margin: 0 0.5rem;
+      }
     }
   }
 }
