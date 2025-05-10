@@ -102,6 +102,14 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
 .btn {
   padding: 0.25rem 1rem;
   max-width: fit-content;
@@ -118,6 +126,8 @@ h3 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -127,26 +137,17 @@ h3 {
 }
 
 .card_section_title {
-  height: 5%;
+  height: fit-content;
   align-content: center;
 }
 
 .card_section_info {
-  height: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-grow: 1;
   border-top: 0;
   padding: 2rem;
-
-  * {
-    margin-bottom: 0.75rem;
-  }
-
-  .card_costs,
-  .card_features,
-  > p,
-  hr,
-  li {
-    margin-bottom: 2rem;
-  }
 
   li > i {
     color: var(--color-primary);
@@ -164,7 +165,6 @@ h3 {
     max-width: 100%;
     width: 100%;
     padding: 0.75rem;
-    margin-bottom: 2rem;
   }
 }
 
@@ -172,6 +172,11 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+li.card_icon_text {
+  margin: 2rem 0;
 }
 
 .left-align {
