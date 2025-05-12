@@ -23,15 +23,15 @@
     <header class="d-flex">
       <nav class="left-menu d-flex">
         <img src="./img/logo-small.png" alt="" />
-        <span><a href="./">Perché Dropbox</a></span>
-        <span><a href="./">Funzioni</a></span>
-        <span><a href="./">Piani e Prezzi</a></span>
+        <a href="./">Perché Dropbox</a>
+        <a href="./">Funzioni</a>
+        <a href="./">Piani e Prezzi</a>
       </nav>
       <nav class="right-menu d-flex">
-        <span><a href="./">Supporto</a></span>
-        <span><a href="./">Contatta l&apos;ufficio vendite</a></span>
-        <span><a href="./">Accedi</a></span>
-        <div class="btn btn-primary"><a href="./">Inizia</a></div>
+        <a href="./">Supporto</a>
+        <a href="./">Contatta l&apos;ufficio vendite</a>
+        <a href="./">Accedi</a>
+        <a class="btn btn-primary" href="./">Inizia</a>
       </nav>
     </header>
 
@@ -42,19 +42,22 @@
           <div class="container">
             <div class="row">
               <div class="col-4">
-                <p>
-                  Finalmente tutti i tuoi strumenti, contenuti e collaboratori
-                  sono accessibili dallo stesso posto. Dropbox Business è più di
-                  uno spazio di archiviazione sicuro: è un modo intelligente e
-                  integrato per ottimizzare il flusso di lavoro esistente.
-                </p>
-                <div class="btn btn-primary">
-                  <a href="./">Inizia la tua prova gratuita</a>
+                <div class="card">
+                  <p>
+                    Finalmente tutti i tuoi strumenti, contenuti e collaboratori
+                    sono accessibili dallo stesso posto. Dropbox Business è più
+                    di uno spazio di archiviazione sicuro: è un modo
+                    intelligente e integrato per ottimizzare il flusso di lavoro
+                    esistente.
+                  </p>
+                  <a class="btn btn-primary" href="./"
+                    >Inizia la tua prova gratuita</a
+                  >
+                  <p>Annulla in qualsiasi momento</p>
+                  <a href="./index.html#plans">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </a>
                 </div>
-                <p>Annulla in qualsiasi momento</p>
-                <a href="./index.html#plans">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </a>
               </div>
               <div class="col-8">
                 <img src="./img/jumbo.png" alt="Jumbo" />
@@ -72,8 +75,12 @@
         <div class="container">
           <h2>Trova il piano business che fa per te</h2>
           <div class="billing">
-            <label><input type="radio" />Fatturazione mensile</label
-            ><label><input type="radio" />Fatturazione annuale</label>
+            <label
+              ><input type="radio" name="monthly" checked />Fatturazione
+              mensile</label
+            ><label
+              ><input type="radio" name="yearly" />Fatturazione annuale</label
+            >
           </div>
           <div class="row">
             <div class="col-4">
@@ -90,29 +97,29 @@
                     <h4>&euro; 12.00</h4>
                     <p>/mese</p>
                   </div>
-                  <div class="card_features">
-                    <div class="card_icon_text d-flex left-align">
+                  <ul class="card_features">
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-user"></i>
                       <p>1 utente</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-folder"></i>
                       <p>5 TB di spazio di archiviazione<br />sicuro</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-share-nodes"></i>
                       <p>
                         Funzioni di produttivitá premium e condivisone file
                         semplice e<br />sicura
                       </p>
-                    </div>
-                  </div>
-                  <div class="btn btn-primary">
-                    <a href="./">Prova gratis per 30 giorni</a>
-                  </div>
+                    </li>
+                  </ul>
+                  <a class="btn btn-primary" href="./"
+                    >Prova gratis per 30 giorni</a
+                  >
                   <p>oppure <a href="./" class="link">acquista ora</a></p>
                   <hr />
-                  <ul class="card_features">
+                  <ul class="card_features selling_points">
                     <li><h4>Punti Salienti del piano</h4></li>
                     <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-check"></i>
@@ -140,29 +147,29 @@
                     <h4>&euro; 18.00</h4>
                     <p>/utente/mese</p>
                   </div>
-                  <div class="card_features">
-                    <div class="card_icon_text d-flex left-align">
-                      <i class="fa-solid fa-user"></i>
+                  <ul class="card_features">
+                    <li class="card_icon_text d-flex left-align">
+                      <i class="fa-solid fa-users"></i>
                       <p>3 o piú utenti</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-folder"></i>
                       <p>Tutto lo spazio di cui ha bisogno il tuo team</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-share-nodes"></i>
                       <p>
                         Sofisticate funzioni di controllo e per tenere al sicuro
                         tutti i file del tuo team
                       </p>
-                    </div>
-                  </div>
-                  <div class="btn btn-primary">
-                    <a href="./">Prova gratis per 30 giorni</a>
-                  </div>
+                    </li>
+                  </ul>
+                  <a class="btn btn-primary" href="./"
+                    >Prova gratis per 30 giorni</a
+                  >
                   <p>oppure <a href="./" class="link">acquista ora</a></p>
                   <hr />
-                  <ul class="card_features">
+                  <ul class="card_features selling_points">
                     <li><h4>Punti Salienti del piano</h4></li>
                     <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-check"></i>
@@ -205,29 +212,29 @@
                     <h4>Contattaci</h4>
                     <p>-</p>
                   </div>
-                  <div class="card_features">
-                    <div class="card_icon_text d-flex left-align">
+                  <ul class="card_features">
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-user"></i>
                       <p>10 o piú utenti</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-folder"></i>
                       <p>Soluzioni personalizzabili per la tua azienda</p>
-                    </div>
-                    <div class="card_icon_text d-flex left-align">
+                    </li>
+                    <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-share-nodes"></i>
                       <p>
                         Assistenza personalizzata per aiutare gli amministratori
                         in una gestione su larga scala
                       </p>
-                    </div>
-                  </div>
-                  <div class="btn btn-primary">
-                    <a href="./">Prova gratis per 30 giorni</a>
-                  </div>
+                    </li>
+                  </ul>
+                  <a class="btn btn-primary" href="./"
+                    >Prova gratis per 30 giorni</a
+                  >
                   <p>oppure <a href="./" class="link">acquista ora</a></p>
                   <hr />
-                  <ul class="card_features">
+                  <ul class="card_features selling_points">
                     <li><h4>Punti Salienti del piano</h4></li>
                     <li class="card_icon_text d-flex left-align">
                       <i class="fa-solid fa-check"></i>
@@ -268,9 +275,9 @@
                         </p>
                       </div>
                       <div class="col-4">
-                        <div class="btn btn-primary">
-                          <a href="./">Contatta l&apos;ufficio vendite</a>
-                        </div>
+                        <a class="btn btn-primary" href="./"
+                          >Contatta l&apos;ufficio vendite</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -295,9 +302,7 @@
                 aziendali, tra cui implementazione, intragrazione, gestione e
                 supporto continui.
               </p>
-              <div class="btn btn-secondary">
-                <a href="./">Trova un partner</a>
-              </div>
+              <a class="btn btn-secondary" href="./">Trova un partner</a>
             </div>
           </div>
         </div>
@@ -393,7 +398,7 @@
           <div class="row">
             <div class="col-8">
               <h2>Piú di 500.000 team utilizzano<br />Dropbox Business</h2>
-              <p class="link">Scopri di piú sui nostri clienti</p>
+              <a href="./" class="link">Scopri di piú sui nostri clienti</a>
             </div>
           </div>
         </div>
