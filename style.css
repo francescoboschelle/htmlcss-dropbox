@@ -14,6 +14,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 :root {
   --color-lighter: rgb(255, 255, 255);
   --color-light: rgb(155, 155, 155);
